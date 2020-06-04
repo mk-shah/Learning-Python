@@ -15,13 +15,16 @@ import random
 secret_number = random.randint(1, 100)
 
 while True:
-    usr_number = int(input("Guess a number between 1 to 100: \n"))
-    if usr_number > 100 or usr_number < 1:
-         print ("Enter the number within 1 to 100")
-    elif usr_number > secret_number:
-        print("Number is > than secret number")
-    elif usr_number < secret_number:
-        print("Number is < than secret number")
-    else:
-        print("You win !!!! ")
-        break
+    try:
+        usr_number = int(input("Guess a number between 1 to 100: \n"))
+        if usr_number > 100 or usr_number < 1:
+             print ("Enter the number within 1 to 100")
+        elif usr_number > secret_number:
+            print("Number is > than secret number")
+        elif usr_number < secret_number:
+            print("Number is < than secret number")
+        else:
+            print("You win !!!! ")
+            break
+    except ValueError:
+        print("Enter an Integer Value")
