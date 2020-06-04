@@ -15,6 +15,8 @@ while True:
     rdm_side = random.choice(coin_side)
     usr_sel = input("Guess heads or tails \n"
                     "If you no longer want to play select 'done':")
+    # func to convert the string to lower case
+    usr_sel = usr_sel.lower()
     if usr_sel == "heads" or usr_sel == "tails" or usr_sel == "done":
         if usr_sel == "done":
             print("Game Over!")
