@@ -1,10 +1,8 @@
 '''
-
-
-
-
+User needs to select heads or tails
+Count the number of wins or looses
+When user selects Done, finish the gave and display the result
 '''
-
 
 import random
 
@@ -13,6 +11,7 @@ win_count = 0
 loose_count = 0
 
 while True:
+    # important function for the code. It will randomly select one element out of the list
     rdm_side = random.choice(coin_side)
     usr_sel = input("Guess heads or tails \n"
                     "If you no longer want to play select 'done':")
