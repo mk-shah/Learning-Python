@@ -44,8 +44,7 @@ def design_1(x):
 
     # Using nested loop
     for col in range(x):
-        print('*', end='')
-        for row in range(x-1):
+        for row in range(x):
             print('*', end='')
         print()
 
